@@ -1,2 +1,2 @@
 # genius.space_course
-Genius.Space FullStack-Developer Course 
+Project made for Genius.Space FullStack-Developer Course 
