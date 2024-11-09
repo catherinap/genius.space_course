@@ -109,6 +109,12 @@ ul {
 }
 
 /* Header */
+header {
+  position: absolute;
+  width: 100%;
+  top: 32px;
+}
+
 .header-flex-container {
   display: flex;
   align-items: center;
@@ -133,6 +139,7 @@ ul {
 .button {
   font-size: 18px;
   padding: 16px 68px;
+  line-height: 1.3;
   background-color: var(--color-primary-green);
   border: 2px solid var(--color-primary-green);
   border-radius: 8px;
@@ -141,7 +148,7 @@ ul {
 }
 
 .button:hover {
-  background: transparent;
+  background: var(--color-primary-light);
   border: 2px solid var(--color-primary-green);
   color: var(--color-dark-green);
 }
@@ -234,16 +241,25 @@ ul {
 
 /* Chef section */
 .chef .section-title {
-  max-width: 478px;
+  position: relative;
   margin: 0 auto 80px;
 }
 
 .chef .section-title::before,
 .chef .section-title::after {
   content: "";
+  position: absolute;
+  bottom: 24px;
   width: 374px;
-  display: block;
   border: 2px solid var(--color-olive);
+}
+
+.chef .section-title::before {
+  right: 0px;
+}
+
+.chef .section-title::after {
+  left: 0px;
 }
 
 .chef-title {
@@ -369,12 +385,35 @@ ul {
 
 /* Footer */
 footer {
+  position: relative;
   padding: 32px 0;
   background-image: url(../images/footer-back.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: var(--color-primary-dark);
+}
+
+footer::before,
+footer::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+footer::before {
+  background-image: url(../images/decor-bread-small.png);
+  width: 180px;
+  height: 120px;
+  left: 0;
+}
+
+footer::after {
+  background-image: url(../images/decor-bread-big.png);
+  width: 380px;
+  height: 190px;
+  right: 0;
 }
 
 .footer-flex-container {
