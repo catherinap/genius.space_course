@@ -44,8 +44,13 @@
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, p {
-margin-top: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
 }
 
 body {
@@ -66,23 +71,23 @@ ul {
 }
 
 .visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .section {
-padding: 48px 0;
+  padding: 48px 0;
 }
 
 .container {
-    width: 100%;
-    max-width: 1288px; /*adding +48 which is 24px + 24px our paddings--> because of the bording-box propery*/
-    margin: 0 auto;
-    padding: 0 24px;
+  width: 100%;
+  max-width: 1288px; /*adding +48 which is 24px + 24px our paddings--> because of the bording-box propery*/
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* Links */
@@ -98,6 +103,8 @@ padding: 48px 0;
 
 /* Button */
 .button {
+  font-size: 18px;
+  padding: 16px 68px;
   background-color: var(--color-primary-green);
   border: 2px solid var(--color-primary-green);
   border-radius: 8px;
@@ -113,7 +120,7 @@ padding: 48px 0;
 
 /* Hero Section */
 .hero-section {
-    padding: 272px 0;
+  padding: 272px 0;
 }
 
 .hero-title {
@@ -149,11 +156,11 @@ padding: 48px 0;
 }
 /* Tradition Section */
 .tradition {
-    padding-top: 96px;
+  padding-top: 96px;
 }
 
 .tradition .section-title {
-    margin-bottom: 42px;
+  margin-bottom: 42px;
 }
 
 .uppercase {
@@ -168,7 +175,7 @@ padding: 48px 0;
 
 /* Chef section */
 .chef .section-title {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .chef-title {
@@ -179,7 +186,7 @@ padding: 48px 0;
 
 /* Formats section */
 .format .section-title {
-margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .format-title {
@@ -195,7 +202,7 @@ margin-bottom: 80px;
 
 /* Footer */
 .contact .section-title {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .address-link {
