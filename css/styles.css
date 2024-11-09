@@ -251,8 +251,7 @@ ul {
   width: 241px;
   height: 390px;
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light),
-   -16px 16px 0 2px var(--color-light-brown);
+  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-light-brown);
 }
 
 /* Formats section */
@@ -316,6 +315,14 @@ footer {
 
 .address-link:hover {
   color: var(--color-primary-green);
+}
+
+.social-link {
+  fill: var(--color-primary-light);
+}
+
+.social-link:hover {
+  fill: var(--color-primary-green);
 }
 
 .address-copyright {
