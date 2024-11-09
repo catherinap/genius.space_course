@@ -39,7 +39,9 @@
 }
 
 /* Base */
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -52,6 +54,9 @@ p {
   margin-top: 0;
 }
 
+a {
+  display: inline-block;
+}
 body {
   margin: 0;
   color: var(--color-primary-dark);
@@ -254,6 +259,29 @@ ul {
   box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-light-brown);
 }
 
+.chefs-flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 30px;
+}
+
+.chefs-flex-list li {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-text p {
+  margin-bottom: 28px;
+}
+
+.chef-text p:last-child {
+  margin-bottom: 0;
+}
+
 /* Formats section */
 .format .section-title {
   margin-bottom: 80px;
@@ -273,6 +301,7 @@ ul {
 .formats-flex-list {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .format-card {
@@ -293,8 +322,54 @@ ul {
   flex-basis: calc((100% - 40px) / 3);
 }
 
+.formats-flex-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Carousel buttons */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-light);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  padding: 0;
+  cursor: pointer;
+  fill: var(--color-primary-dark);
+  flex-shrink: 0;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
+/* Contacts Section */
+.contacts-flex-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact .section-title {
+  margin-bottom: 16px;
+}
+.contact {
+  padding-bottom: 96px;
+}
+.contact-map {
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 16px;
+}
+
 /* Footer */
 footer {
+  padding: 32px 0;
   background-image: url(../images/footer-back.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -302,8 +377,16 @@ footer {
   background-color: var(--color-primary-dark);
 }
 
-.contact .section-title {
-  margin-bottom: 16px;
+.footer-flex-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
 }
 
 .address-link {
@@ -329,4 +412,12 @@ footer {
   color: var(--color-light-brown);
   font-size: 14px;
   margin-bottom: 0;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.privac-policy {
+  text-align: end;
 }

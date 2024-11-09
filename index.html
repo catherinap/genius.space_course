@@ -67,27 +67,39 @@
       <section class="section chef" id="chefs-section">
         <div class="container">
           <h2 class="section-title centered">Our best <span class="accent">chef-cooks</span></h2>
-          <ul>
+          <ul class="chefs-flex-list">
             <li>
-              <article>
+              <article class="chef-card">
                 <img class="chef-photo" src="./images/nastya.jpg" alt="Nastya-chef" />
-                <h3 class="chef-title">Nastya</h3>
-                <p>Hello, I am Nastya!</p>
-                <p>For 10 years, I have been bringing interesting and delicious ideas to life.</p>
-                <p>I will bake the most delicious products for you!</p>
+                <div>
+                  <h3 class="chef-title">Nastya</h3>
+                  <div class="chef-text">
+                    <p>Hello, I am Nastya!</p>
+                  <p>
+                    For 10 years, I've been bringing <br />
+                    interesting and tasty<br />
+                    ideas to life.
+                  </p>
+                  <p>I will bake the most delicious products for you!</p>
+                  </div>
+                </div>
               </article>
             </li>
             <li>
-              <article>
+              <article class="chef-card">
                 <img class="chef-photo" src="./images/vlad.jpg" alt="Vlad-chef" />
-                <h3 class="chef-title">Vlad</h3>
-                <p>Hello, I am Vlad!</p>
-                <p>
-                  I have 18 years of coding experience.
-                  <span class="uppercase">shop bakery</span> is our love, which we share with you
-                  every time through our pastries!
-                </p>
-                <p>I will make a unique filling for you for any taste!</p>
+                <div>
+                  <h3 class="chef-title">Vlad</h3>
+                  <div class="chef-text">
+                    <p>Hello, I am Vlad!</p>
+                  <p>
+                    I have 18 years of coding experience.
+                    <span class="uppercase">shop bakery</span> is our love, which we share with you
+                    every time through our pastries!
+                  </p>
+                  <p>I will make a unique filling for you for any taste!</p>
+                  </div>
+                </div>
               </article>
             </li>
           </ul>
@@ -97,76 +109,96 @@
       <section class="section format" id="formats-section">
         <div class="container">
           <h2 class="section-title centered">Formats</h2>
-          <ul class="formats-flex-list">
-            <li>
-              <article class="format-card">
-                <!-- <img src="./images/walrus.jpg" alt="Walrus" /> -->
-                <h3 class="format-title">Walrus</h3>
-                <div class="format-text">
-                  <p>Area: up to 120 m2</p>
-                  <p>Menu: extended menu</p>
-                  <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 general waiters</p>
-                  <p>Seating: available</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="format-card">
-                <h3 class="format-title">Horseshoe</h3>
-                <div class="format-text">
-                  <p>Area: up to 25 m2</p>
-                  <p>Menu: the most popular menu items</p>
-                  <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
-                  <p>Seats: none</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="format-card">
-                <h3 class="format-title">Handlebar</h3>
-                <div class="format-text">
-                  <p>Area: up to 15 m2</p>
-                  <p>Menu: the most popular menu items</p>
-                  <p>Staff: 1 saler, 1 baker, 1 baker's assistant</p>
-                  <p>Seats: none</p>
-                </div>
-              </article>
-            </li>
-          </ul>
+          <div class="formats-flex-container">
+            <button type="button" class="carousel-button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="formats-flex-list">
+              <li>
+                <article class="format-card">
+                  <!-- <img src="./images/walrus.jpg" alt="Walrus" /> -->
+                  <h3 class="format-title">Walrus</h3>
+                  <div class="format-text">
+                    <p>Area: up to 120 m2</p>
+                    <p>Menu: extended menu</p>
+                    <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 general waiters</p>
+                    <p>Seating: available</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="format-card">
+                  <h3 class="format-title">Horseshoe</h3>
+                  <div class="format-text">
+                    <p>Area: up to 25 m2</p>
+                    <p>Menu: the most popular menu items</p>
+                    <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
+                    <p>Seats: none</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="format-card">
+                  <h3 class="format-title">Handlebar</h3>
+                  <div class="format-text">
+                    <p>Area: up to 15 m2</p>
+                    <p>Menu: the most popular menu items</p>
+                    <p>Staff: 1 saler, 1 baker, 1 baker's assistant</p>
+                    <p>Seats: none</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button type="button" class="carousel-button left">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
       <section class="section contact" id="contacts-section">
         <div class="container">
-          <h2 class="section-title">Join the network of bakeries</h2>
-          <p>Fill out the form so we can contact you!</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2spl!4v1731089538135!5m2!1sen!2spl"
-            width="603"
-            height="595"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contacts-flex-container">
+            <div class="contacts-form">
+              <h2 class="section-title">Join the network of bakeries</h2>
+              <p>Fill out the form so we can contact you!</p>
+              <!-- form -->
+            </div>
+            <iframe class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2spl!4v1731089538135!5m2!1sen!2spl"
+              width="603"
+              height="595"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
       <div class="container">
-        <nav>
-          <a href="./index.html">
+        <div class="footer-flex-container">
+          <nav class="footer-nav">
+          <div class="flex-grow">
+            <a href="./index.html">
             <img src="./images/logo.svg" alt="logo of Modern bakery" />
           </a>
-          <ul>
+          </div>
+          <ul class="flex-grow">
             <li><a class="link" href="#traditions-section">Our traditions</a></li>
             <li><a class="link" href="#chefs-section">Chefs</a></li>
             <li><a class="link" href="#formats-section">Formats</a></li>
             <li><a class="link" href="#contacts-section">Contacts</a></li>
           </ul>
         </nav>
-        <address>
-          <ul>
+        <address class="footer-address">
+          <ul class="flex-grow">
             <li>
               <a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
             </li>
@@ -190,15 +222,18 @@
             </li>
             <li>
               <a href="#">
-               <svg class="social-link" width="32" height="32">
+                <svg class="social-link" width="32" height="32">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <a class="address-link" href="#" target="_blank">Privacy Policy</a>
+          <div class="flex-grow privac-policy">
+            <a class="address-link" href="#" target="_blank">Privacy Policy</a>
           <p class="address-copyright">&copy; 2022 Modern Bakery</p>
+          </div>
         </address>
+        </div>
       </div>
     </footer>
   </body>
