@@ -9,18 +9,20 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="logo of Modern bakery" />
-          </a>
-          <ul>
-            <li><a class="link" href="#traditions-section">Our traditions</a></li>
-            <li><a class="link" href="#chefs-section">Chefs</a></li>
-            <li><a class="link" href="#formats-section">Formats</a></li>
-            <li><a class="link" href="#contacts-section">Contacts</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Order a call</button>
+        <div class="header-flex-container">
+          <nav class="header-nav">
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="logo of Modern bakery" />
+            </a>
+            <ul>
+              <li><a class="link" href="#traditions-section">Our traditions</a></li>
+              <li><a class="link" href="#chefs-section">Chefs</a></li>
+              <li><a class="link" href="#formats-section">Formats</a></li>
+              <li><a class="link" href="#contacts-section">Contacts</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Order a call</button>
+        </div>
       </div>
     </header>
 
@@ -31,7 +33,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
           <ul class="advantages-list">
@@ -44,17 +46,21 @@
 
       <section class="section tradition" id="traditions-section">
         <div class="container">
-          <h2 class="section-title">A new format of traditions</h2>
-          <p class="traditions-text">
-            <span class="uppercase">shop bakery</span> is a bakery that took all the best and
-            preserved the taste of traditional baking and the naturalness of the ingredients.
-          </p>
-          <p>
-            We work like the most famous chain —
-            <span class="brand-color">5 ​​minutes and the order is ready</span>. And our bakeries
-            have a stylish design and high quality service!
-          </p>
-          <img src="./images/baker.jpg" alt="Photo of a smiling baker" />
+          <div class="traditions-flex-container">
+            <div class="traditions-flex-content">
+              <h2 class="section-title">A new format of traditions</h2>
+              <p class="traditions-text">
+                <span class="uppercase">shop bakery</span> is a bakery that took all the best and
+                preserved the taste of traditional baking and the naturalness of the ingredients.
+              </p>
+              <p class="limited">
+                We work like the most famous chain —
+                <span class="brand-color">5 ​​minutes and the order is ready</span>. And our
+                bakeries have a stylish design and high quality service!
+              </p>
+            </div>
+            <img src="./images/baker.jpg" alt="Photo of a smiling baker" />
+          </div>
         </div>
       </section>
 
@@ -89,9 +95,9 @@
       <section class="section format" id="formats-section">
         <div class="container">
           <h2 class="section-title">Formats</h2>
-          <ul>
+          <ul class="formats-flex-list">
             <li>
-              <article>
+              <article class="format-card">
                 <h3 class="format-title">Walrus</h3>
                 <div class="format-text">
                   <p>Area: up to 120 m2</p>
@@ -102,7 +108,7 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="format-card">
                 <h3 class="format-title">Horseshoe</h3>
                 <div class="format-text">
                   <p>Area: up to 25 m2</p>
@@ -113,7 +119,7 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="format-card">
                 <h3 class="format-title">Handlebar</h3>
                 <div class="format-text">
                   <p>Area: up to 15 m2</p>
