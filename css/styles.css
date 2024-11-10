@@ -464,6 +464,7 @@ footer::after {
 }
 
 .address-link {
+  margin-bottom: 16px;
   color: var(--color-primary-light);
   font-size: 16px;
   font-weight: 300;
@@ -474,10 +475,19 @@ footer::after {
 .address-link:hover {
   color: var(--color-primary-green);
 }
+.footer-links {
+margin-bottom: 16px;
+}
 
 .social-link {
+  display: inline-block;
   fill: var(--color-primary-light);
   transition: fill 0.2s;
+}
+
+.inline {
+  display: inline-block;
+  margin-right: 22px;
 }
 
 .social-link:hover {
