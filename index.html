@@ -290,7 +290,7 @@
           <p>Leave a request and our specialist will contact you!</p>
         </div>
 
-        <form class="order-form" name="contact-form" autocomplete="off" novalidate>
+        <form class="order-form" name="contact-form" autocomplete="off">
           <div class="form-field">
             <label class="visually-hidden" for="user-name">Name</label>
             <input
@@ -299,6 +299,9 @@
               id="user-name"
               name="user-name"
               placeholder="Name"
+              minlength="2"
+              maxlength="30"
+              required
             />
           </div>
 
@@ -310,6 +313,10 @@
               id="user-tel"
               name="user-tel"
               placeholder="Phone Number"
+              pattern="[0-9()#&+*-=.]+"
+              minlength="9"
+              maxlength="9"
+              required
             />
           </div>
 
@@ -321,6 +328,7 @@
               id="user-email"
               name="user-email"
               placeholder="E-mail"
+              required
             />
           </div>
           <button type="submit" class="button form-button">Order a call</button>

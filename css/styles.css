@@ -476,7 +476,7 @@ footer::after {
   color: var(--color-primary-green);
 }
 .footer-links {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .social-link {
@@ -606,6 +606,15 @@ margin-bottom: 16px;
 
 .form-input:focus::placeholder {
   color: var(--color-primary-dark);
+}
+
+.form-input:disabled {
+  border-color: lightgray;
+  cursor: not-allowed;
+}
+
+.form-input:disabled::placeholder {
+  color: lightgray;
 }
 
 .form-button {
