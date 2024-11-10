@@ -3,16 +3,17 @@
 @import './base';
 @import './extras/_extras';
 
-@import './components/advantages_section';
+@import './layouts/advantages_section';
 @import './components/buttons';
-@import './components/chefs_section';
-@import './components/contacts_section';
+@import './layouts/chefs_section';
+@import './layouts/contacts_section';
 @import './components/contact_form';
 @import './components/footer';
-@import './components/formats_section';
+@import './layouts/formats_section';
 @import './components/header';
 @import './extras/helpers';
-@import'./components/hero_section';
+@import'./layouts/hero_section';
 @import './components/links';
 @import './components/modal_window';
-@import './components/traditions_section';
+@import './layouts/traditions_section';
+@import './components/carousel_button';
