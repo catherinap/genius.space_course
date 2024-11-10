@@ -1,0 +1,10 @@
+.link {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: color 0.2s;
+    /* always setting animation for the element, not the event(ex:hover) */
+}
+
+.link:hover {
+    color: var(--color-primary-green);
+}

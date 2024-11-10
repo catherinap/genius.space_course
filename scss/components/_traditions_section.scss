@@ -1,0 +1,35 @@
+.tradition {
+    padding-top: 96px;
+}
+
+.traditions-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditions-flex-content {
+    max-width: 710px;
+}
+
+.tradition .section-title {
+    margin-bottom: 42px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.traditions-text .uppercase,
+.brand-color {
+    color: var(--color-primary-green);
+}
+
+.limited {
+    max-width: 360px;
+}
+
+.arch-photo {
+    border-radius: 200px 200px 4px 4px;
+}

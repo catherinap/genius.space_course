@@ -1,0 +1,11 @@
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    /*adding +48 which is 24px + 24px our paddings--> because of the bording-box propery*/
+    margin: 0 auto;
+    padding: 0 24px;
+}
