@@ -460,3 +460,50 @@ footer::after {
 .privac-policy {
   text-align: end;
 }
+
+/* Modal Window */
+.backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(49, 38, 26, 0.4);
+}
+
+.modal-window {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-close {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.modal-window::after {
+  position: absolute;
+  content: "";
+  width: 190px;
+  height: 245px;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url(../images/decor-bread-modal.png);
+}
