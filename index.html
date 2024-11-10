@@ -168,8 +168,46 @@
           <div class="contacts-flex-container">
             <div class="contacts-form">
               <h2 class="section-title">Join the network of bakeries</h2>
-              <p>Fill out the form so we can contact you!</p>
-              <!-- form -->
+              <p class="main-page-form-text">Fill out the form so we can contact you!</p>
+
+              <form class="contact-form" name="contact-form" autocomplete="off" novalidate>
+                <div class="form-field">
+                  <label class="visually-hidden" for="user-name">Name</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Name"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="visually-hidden" for="user-tel">Phone Number</label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Phone Number"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="visually-hidden" for="user-email">E-mail</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <button type="submit" class="button form-button">Order a call</button>
+              </form>
+              <p class="form-policy">
+                By clicking the button, I agree to the <a href="#">privacy policy</a>
+              </p>
             </div>
             <iframe
               class="contact-map"
@@ -243,13 +281,54 @@
 
     <div class="backdrop is-hidden">
       <div class="modal-window">
-        <h1 class="section-title">Order a call</h1>
-        <p>Leave a request and our specialist will contact you!</p>
-        <p>By clicking the button, I agree to the <a href="#">privacy policy</a></p>
         <button class="modal-close" type="button">
           <img src="./images/close_btn.svg" alt="" />
         </button>
-        <button class="button" type="submit">Order a call</button>
+
+        <div class="form-text">
+          <h2 class="section-title form-title">Order a call</h2>
+          <p>Leave a request and our specialist will contact you!</p>
+        </div>
+
+        <form class="order-form" name="contact-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="visually-hidden" for="user-name">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Name"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="visually-hidden" for="user-tel">Phone Number</label>
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Phone Number"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="visually-hidden" for="user-email">E-mail</label>
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="E-mail"
+            />
+          </div>
+          <button type="submit" class="button form-button">Order a call</button>
+        </form>
+
+        <p class="form-policy">
+          By clicking the button, I agree to the <a href="#">privacy policy</a>
+        </p>
       </div>
     </div>
 
