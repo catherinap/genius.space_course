@@ -251,6 +251,10 @@ header {
   max-width: 360px;
 }
 
+.arch-photo {
+  border-radius: 200px 200px 0px 0px;
+}
+
 /* Chef section */
 .chef .section-title {
   position: relative;
