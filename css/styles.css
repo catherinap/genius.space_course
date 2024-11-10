@@ -320,6 +320,10 @@ header {
   flex-wrap: wrap;
 }
 
+.left {
+  transform: rotate(180deg);
+}
+
 .format-card {
   height: 444px;
   background-image: linear-gradient(
@@ -493,8 +497,12 @@ footer::after {
   right: 40px;
   top: 40px;
   border: 0;
+  padding: 0;
   background: transparent;
+  stroke: var(--color-primary-dark);
   cursor: pointer;
+  width: 32px;
+  height: 32px;
 }
 
 .modal-window::after {
