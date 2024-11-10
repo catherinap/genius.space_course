@@ -484,6 +484,10 @@ footer::after {
   height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .backdrop.is-hidden {
