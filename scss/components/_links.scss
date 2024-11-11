@@ -1,10 +1,20 @@
 .link {
-    color: var(--color-primary-light);
-    text-decoration: none;
-    transition: color 0.2s;
-    /* always setting animation for the element, not the event(ex:hover) */
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.2s;
+  /* always setting animation for the element, not the event(ex:hover) */
 }
 
 .link:hover {
+  color: var(--color-primary-green);
+}
+
+.nav__link {
+  color: var(--color-primary-dark);
+  margin-bottom: 16px;
+
+  &:focus {
+    font-weight: 600;
     color: var(--color-primary-green);
+  }
 }

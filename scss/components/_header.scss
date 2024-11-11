@@ -1,29 +1,71 @@
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 0;
+
+  @media screen and (min-width: $bp-desktop) {
     padding-top: 32px;
+  }
 
-    .header__flex-container {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
+  &__flex-container {
+    display: flex;
+    align-items: start;
+    gap: 40px;
 
-        .header__nav {
-            display: flex;
-            align-items: center;
-            flex-grow: 1;
-            gap: 40px;
-        }
+    @media screen and (min-width: $bp-desktop) {
+      align-items: center;
+    }
+  }
 
-            .header__nav ul {
-                display: flex;
-                flex-grow: 1;
-                gap: 64px;
-                justify-content: center;
-            }
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  &__nav ul {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-grow: 1;
+      gap: 64px;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    fill: var(--color-primary-light);
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 72px;
+    height: 38px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 114px;
+      height: 56px;
+    }
+  }
 }
-
-

@@ -1,35 +1,53 @@
 .tradition {
+  padding-top: 0;
+
+  @media screen and (min-width: $bp-desktop) {
     padding-top: 96px;
+  }
 }
 
 .traditions-flex-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 96px;
+  }
 }
 
 .traditions-flex-content {
-    max-width: 710px;
+  max-width: 710px;
 }
 
 .tradition .section-title {
-    margin-bottom: 42px;
+  margin-bottom: 42px;
 }
 
 .uppercase {
-    text-transform: uppercase;
-    font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .traditions-text .uppercase,
 .brand-color {
-    color: var(--color-primary-green);
+  color: var(--color-primary-green);
 }
 
 .limited {
+  max-width: 310px;
+
+  @media screen and (min-width: $bp-tablet) {
     max-width: 360px;
+  }
 }
 
 .arch-photo {
-    border-radius: 200px 200px 4px 4px;
+  display: none;
+  border-radius: 400px 400px 4px 4px;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+  }
 }
