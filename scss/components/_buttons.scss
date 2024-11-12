@@ -22,3 +22,17 @@
   display: block;
   margin: 0 auto 24px;
 }
+
+.main-page-form-button {
+  margin: 0 auto;
+  height: 45px;
+  padding: 10px 48px;
+  font-size: 16px;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 18px;
+    margin: 0 auto 16px;
+    height: inherit;
+    padding: 16px 64px;
+  }
+}

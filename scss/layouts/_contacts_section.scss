@@ -1,27 +1,67 @@
 .contacts-flex-container {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (min-width: $bp-desktop) {
+    flex-direction: row;
     gap: 32px;
+  }
 }
 
 .contact .section-title {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+
+  @media screen and (min-width: $bp-desktop) {
+    text-align: start;
+  }
 }
 
 .main-page-form-text {
-    color: var(--color-dark-green);
+  color: var(--color-dark-green);
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $bp-tablet) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    margin-bottom: 42px;
+    font-size: 16px;
+    text-align: start;
+  }
 }
 
-.contact {
+section.contact {
+  padding-bottom: 0;
+  @media screen and (min-width: $bp-desktop) {
     padding-bottom: 96px;
+  }
 }
 
 .contact-map {
+  margin: 0 -20px;
+  height: 176px;
+  border: 1px solid transparent;
+
+  @media screen and (min-width: $bp-tablet) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
     flex-shrink: 0;
-    border: 1px solid transparent;
+    max-width: 100%;
     border-radius: 16px;
     transition: 0.3s;
+    width: 600px;
+    height: 595px;
+    margin: 0;
+  }
 }
 
 .contact-map:hover {
-    border: 1px solid var(--color-light-brown);
+  border: 1px solid var(--color-light-brown);
 }
