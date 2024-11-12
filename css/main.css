@@ -630,20 +630,28 @@ footer::before {
     background-image: url(../images/decor-bread-small.png);
     width: 180px;
     height: 120px;
+    left: 0;
+    top: 130px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer::before {
+    top: 112px;
   }
 }
 
 footer::after {
+  background-image: url(../images/footer-corner-breads.png);
   width: 100px;
   height: 90px;
-  background-image: url(../images/footer-corner-breads.png);
   right: 0;
 }
 @media screen and (min-width: 870px) {
   footer::after {
+    background-image: url(../images/decor-bread-big.png);
     width: 380px;
     height: 188px;
-    background-image: url(../images/decor-bread-big.png);
+    right: 0;
   }
 }
 
@@ -1082,6 +1090,8 @@ footer::after {
 
 .mobile-menu {
   position: fixed;
+  overflow: hidden;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;

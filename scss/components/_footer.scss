@@ -26,25 +26,32 @@ footer::before {
   width: 92px;
   height: 196px;
   left: 0;
-  top: 50px;
+   top: 50px;
 
-  @media screen and (min-width: $bp-tablet) {
+   @media screen and (min-width: $bp-tablet) {
     background-image: url(../images/decor-bread-small.png);
     width: 180px;
     height: 120px;
+    left: 0;
+    top: 130px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    top: 112px;
   }
 }
 
 footer::after {
+  background-image: url(../images/footer-corner-breads.png);
   width: 100px;
   height: 90px;
-  background-image: url(../images/footer-corner-breads.png);
   right: 0;
 
   @media screen and (min-width: $bp-tablet) {
+    background-image: url(../images/decor-bread-big.png);
     width: 380px;
     height: 188px;
-    background-image: url(../images/decor-bread-big.png);
+    right: 0;
   }
 }
 
