@@ -48,6 +48,7 @@ section.contact {
   border: 1px solid transparent;
 
   @media screen and (min-width: $bp-tablet) {
+    margin: 0 -40px;
     height: 400px;
   }
 

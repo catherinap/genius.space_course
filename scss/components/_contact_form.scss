@@ -1,10 +1,20 @@
 .form-text {
-  margin-bottom: 72px;
+  margin-bottom: 0;
   text-align: center;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 72px;
+  }
 }
 
 .form-text p {
   color: var(--color-dark-green);
+  font-size: 12px;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 72px;
+    font-size: 16px;
+  }
 }
 
 .form-title {
@@ -15,8 +25,8 @@
   margin: 0 0 16px;
   display: block;
 
-     @media screen and (min-width: $bp-tablet) {
-    width: 60%;
+  @media screen and (min-width: $bp-tablet) {
+    width: 70%;
     margin: 0 auto 16px;
   }
 
@@ -35,7 +45,6 @@
   border-radius: 8px;
   border: 1px solid var(--color-light-brown);
   background-color: transparent;
-
 
   @media screen and (min-width: $bp-desktop) {
     padding: 16px 42px;

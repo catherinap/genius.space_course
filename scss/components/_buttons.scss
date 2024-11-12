@@ -12,10 +12,10 @@
 }
 
 .button:hover {
-  cursor: pointer;
   background: var(--color-primary-light);
   border: 2px solid var(--color-primary-green);
   color: var(--color-dark-green);
+  cursor: pointer;
 }
 
 .form-button {
@@ -26,8 +26,12 @@
 .main-page-form-button {
   margin: 0 auto;
   height: 45px;
-  padding: 10px 48px;
+  padding: 10px 58px;
   font-size: 16px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 10px 78px;
+  }
 
   @media screen and (min-width: $bp-desktop) {
     font-size: 18px;
