@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Bakery</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
   </head>
   <body>
@@ -25,29 +26,28 @@
           <button class="header__button button modal-open" type="button">Order a call</button>
           <button type="button" class="header__burger menu-open">
             <svg width="32" height="32">
-                    <use href="./images/icons.svg#icon-menu"></use>
-                  </svg>
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
           </button>
 
-        <div class="mobile-menu">
-          <button class="mobile-menu__close menu-close" type="button">
-         <img src="./images/close_btn.svg" alt="close button">
-        </button>
-        <nav class="mobile-menu__nav">
-            <div class="mobile-menu__container">
-              <a class="nav__logo" href="./index.html">
-                <img src="./images/logo-braun.svg" alt="logo of Modern bakery" />
-              </a>
-              <ul class="nav__links">
-              <li><a class="nav__link link" href="#traditions-section">Our traditions</a></li>
-              <li><a class="nav__link link" href="#chefs-section">Chefs</a></li>
-              <li><a class="nav__link link" href="#formats-section">Formats</a></li>
-              <li><a class="nav__link link" href="#contacts-section">Contacts</a></li>
-            </ul>
-            </div>
-          </nav>
-        </div>
-
+          <div class="mobile-menu">
+            <button class="mobile-menu__close menu-close" type="button">
+              <img src="./images/close_btn.svg" alt="close button" />
+            </button>
+            <nav class="mobile-menu__nav">
+              <div class="mobile-menu__container">
+                <a class="nav__logo" href="./index.html">
+                  <img src="./images/logo-braun.svg" alt="logo of Modern bakery" />
+                </a>
+                <ul class="nav__links">
+                  <li><a class="nav__link link" href="#traditions-section">Our traditions</a></li>
+                  <li><a class="nav__link link" href="#chefs-section">Chefs</a></li>
+                  <li><a class="nav__link link" href="#formats-section">Formats</a></li>
+                  <li><a class="nav__link link" href="#contacts-section">Contacts</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -86,7 +86,12 @@
                 bakeries have a stylish design and high quality service!
               </p>
             </div>
-            <img class="arch-photo" src="./images/baker.jpg" alt="Photo of a smiling baker" />
+            <img
+              class="arch-photo"
+              src="./images/baker.jpg"
+              srcset="./images/baker.jpg 1x, ./images/baker@2x.jpg 2x"
+              alt="Photo of a smiling baker"
+            />
           </div>
         </div>
       </section>
@@ -135,55 +140,86 @@
           </ul>
         </div>
       </section>
-<!-- 
+
       <section class="section format" id="formats-section">
         <div class="container">
           <h2 class="section-title centered">Formats</h2>
+
           <div class="formats-flex-container">
-            <button type="button" class="carousel-button">
+            <button type="button" class="formats-carousel-button carousel-button prev">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <ul class="formats-flex-list">
-              <li>
-                <article class="format-card">
-                  <img class="formats-image" src="./images/walrus.jpg" alt="Walrus" />
-                  <h3 class="format-title">Walrus</h3>
-                  <div class="format-text">
-                    <p>Area: up to 120 m2</p>
-                    <p>Menu: extended menu</p>
-                    <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 general waiters</p>
-                    <p>Seating: available</p>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article class="format-card">
-                  <img class="formats-image" src="./images/horseshoe.jpg" alt="Horseshoe" />
-                  <h3 class="format-title">Horseshoe</h3>
-                  <div class="format-text">
-                    <p>Area: up to 25 m2</p>
-                    <p>Menu: the most popular menu items</p>
-                    <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
-                    <p>Seats: none</p>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article class="format-card">
-                  <img class="formats-image" src="./images/handlebar.jpg" alt="Handlebar" />
-                  <h3 class="format-title">Handlebar</h3>
-                  <div class="format-text">
-                    <p>Area: up to 15 m2</p>
-                    <p>Menu: the most popular menu items</p>
-                    <p>Staff: 1 sales person, 1 baker, 1 baker's assistant</p>
-                    <p>Seats: none</p>
-                  </div>
-                </article>
-              </li>
-            </ul>
-            <button type="button" class="carousel-button right-arrow">
+
+            <div class="swiper-container overflow-hidden">
+              <ul class="formats-flex-list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <div class="format-card__container">
+                      <img class="formats-image" src="./images/walrus.jpg" alt="Walrus" />
+                      <h3 class="format-title">Walrus</h3>
+                      <div class="format-text">
+                        <p>Area: up to 120 m2</p>
+                        <p>Menu: extended menu</p>
+                        <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 general waiters</p>
+                        <p>Seating: available</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <div class="format-card__container">
+                      <img class="formats-image" src="./images/horseshoe.jpg" alt="Horseshoe" />
+                      <h3 class="format-title">Horseshoe</h3>
+                      <div class="format-text">
+                        <p>Area: up to 25 m2</p>
+                        <p>Menu: the most popular menu items</p>
+                        <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
+                        <p>Seats: none</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <div class="format-card__container">
+                      <img class="formats-image" src="./images/handlebar.jpg" alt="Handlebar" />
+                      <h3 class="format-title">Handlebar</h3>
+                      <div class="format-text">
+                        <p>Area: up to 15 m2</p>
+                        <p>Menu: the most popular menu items</p>
+                        <p>Staff: 1 sales person, 1 baker, 1 baker's assistant</p>
+                        <p>Seats: none</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <div class="format-card__container">
+                      <img class="formats-image" src="./images/horseshoe.jpg" alt="Horseshoe" />
+                      <h3 class="format-title">Horseshoe</h3>
+                      <div class="format-text">
+                        <p>Area: up to 25 m2</p>
+                        <p>Menu: the most popular menu items</p>
+                        <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
+                        <p>Seats: none</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+              </div>
+            </div>
+
+            <button type="button" class="formats-carousel-button carousel-button next right-arrow">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -191,7 +227,7 @@
           </div>
         </div>
       </section>
-
+      <!-- 
       <section class="section contact" id="contacts-section">
         <div class="container">
           <div class="contacts-flex-container">
@@ -257,10 +293,11 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
+
       <div class="container">
         <div class="footer-flex-container">
           <nav class="footer-nav">
@@ -377,7 +414,10 @@
       </div>
     </div> -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

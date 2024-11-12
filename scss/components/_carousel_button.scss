@@ -1,24 +1,24 @@
 .carousel-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-primary-light);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 1px solid var(--color-primary-dark);
-    padding: 0;
-    cursor: pointer;
-    fill: var(--color-primary-dark);
-    flex-shrink: 0;
-    transition: background-color 0.2s, fill 0.2s;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-light);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  padding: 0;
+  cursor: pointer;
+  fill: var(--color-primary-dark);
+  flex-shrink: 0;
+  transition: background-color 0.2s, fill 0.2s;
 
-.carousel-button:hover {
+  &:hover {
     background-color: var(--color-primary-dark);
     fill: var(--color-primary-light);
+  }
 }
 
 .right-arrow {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }

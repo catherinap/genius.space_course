@@ -1,57 +1,96 @@
 .chef .section-title {
-    position: relative;
+  position: relative;
+  margin: 0 auto 24px;
+
+  @media screen and (min-width: $bp-desktop) {
     margin: 0 auto 80px;
+  }
 }
 
 .chef .section-title::before,
 .chef .section-title::after {
-    content: "";
-    position: absolute;
-    bottom: 16px;
-    width: 374px;
-    border: 2px solid var(--color-olive);
+  display: none;
+  content: "";
+  position: absolute;
+  bottom: 16px;
+  width: 374px;
+  border: 2px solid var(--color-olive);
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+  }
 }
 
 .chef .section-title::before {
-    right: 0px;
+  right: 0px;
 }
 
 .chef .section-title::after {
-    left: 0px;
+  left: 0px;
 }
 
 .chef-title {
-    font-weight: 600;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $bp-tablet) {
     font-size: 40px;
     margin-bottom: 16px;
+  }
 }
 
 .chef-photo {
-    width: 241px;
-    height: 390px;
-    border-radius: 4px 4px 4px 200px;
+  width: 140px;
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -10px 9px 0 0 var(--color-primary-light), -10px 9px 0 2px var(--color-light-brown);
+
+  @media screen and (min-width: $bp-desktop) {
     box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-light-brown);
+    height: 390px;
+    width: 240px;
+  }
 }
 
 .chefs-flex-list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  @media screen and (min-width: $bp-tablet) {
     gap: 40px 30px;
+    flex-direction: row;
+  }
 }
 
 .chefs-flex-list li {
+  @media screen and (min-width: $bp-tablet) {
     flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .chef-card {
-    display: flex;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-left: 10px;
+
+  @media screen and (min-width: $bp-tablet) {
     gap: 30px;
+  }
 }
 
 .chef-text p {
+  margin-bottom: 18px;
+  font-size: 14px;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
     margin-bottom: 28px;
+  }
 }
 
 .chef-text p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }

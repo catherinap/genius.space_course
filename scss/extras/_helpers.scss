@@ -2,6 +2,10 @@
   padding: 20px 0;
 
   @media screen and (min-width: $bp-tablet) {
+    padding: 20px 0;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
     padding: 48px 0;
   }
 }
@@ -25,7 +29,11 @@
 }
 
 .container {
-  padding: 20px 20px;
+  padding: 0px 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 0px 40px;
+  }
 
   @media screen and (min-width: $bp-desktop) {
     width: 100%;

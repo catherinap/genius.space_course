@@ -1,8 +1,13 @@
 .tradition {
-  padding-top: 0;
+  padding: 20px 0px 20px 0px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 40px 0px 20px 0px;
+  }
 
   @media screen and (min-width: $bp-desktop) {
     padding-top: 96px;
+    padding-bottom: 48px;
   }
 }
 
@@ -10,10 +15,10 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
 
-  @media screen and (min-width: $bp-tablet) {
-    padding-top: 96px;
+  @media screen and (min-width: $bp-desktop) {
+    gap: 40px;
   }
 }
 
@@ -22,7 +27,11 @@
 }
 
 .tradition .section-title {
-  margin-bottom: 42px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $bp-desktop) {
+    margin-bottom: 42px;
+  }
 }
 
 .uppercase {
@@ -37,6 +46,7 @@
 
 .limited {
   max-width: 310px;
+  margin-bottom: 0;
 
   @media screen and (min-width: $bp-tablet) {
     max-width: 360px;
@@ -48,6 +58,12 @@
   border-radius: 400px 400px 4px 4px;
 
   @media screen and (min-width: $bp-tablet) {
+    width: 293px;
+    display: block;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    width: 393px;
     display: block;
   }
 }

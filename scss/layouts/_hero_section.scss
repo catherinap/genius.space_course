@@ -16,6 +16,16 @@
     padding: 272px 0;
   }
 
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        102.76deg,
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%
+      ),
+      url("../images/header_back@2x.jpg");
+  }
+
   &__button {
     margin: 0 auto;
 

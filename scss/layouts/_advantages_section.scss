@@ -1,10 +1,14 @@
 .advantages-section {
   background-color: transparent;
-  padding-top: 20px;
+  padding: 40px 0px 20px 0px;
 
   @media screen and (min-width: $bp-tablet) {
     padding: 16px 0;
     background-color: var(--color-primary-green);
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 16px 0;
   }
 }
 
@@ -27,12 +31,16 @@
 }
 
 .advantages-item {
-  color: var(--color-primary-dark);
   font-size: 14px;
+  color: var(--color-primary-dark);
   font-weight: 300;
 
   @media screen and (min-width: $bp-tablet) {
     color: var(--color-primary-light);
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
     font-size: 20px;
   }
 }
