@@ -598,7 +598,7 @@ footer {
   text-align: center;
   position: relative;
   padding: 32px 0;
-  background-image: url(../images/footer-back.png);
+  background-image: url(../images/footer-mobile-back@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -606,6 +606,7 @@ footer {
 }
 @media screen and (min-width: 1280px) {
   footer {
+    background-image: url(../images/footer-back@2x.png);
     text-align: left;
   }
 }
