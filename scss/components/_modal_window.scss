@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 8;
   top: 0;
   left: 0;
   bottom: 0;
@@ -22,7 +23,6 @@
   position: relative;
   width: 100%;
   min-height: 70%;
-
   max-width: 880px;
   padding: 25px;
   border-radius: 32px;

@@ -8,11 +8,12 @@
     ),
     url("../images/header_back.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 75% top;
   background-size: cover;
   padding: 124px 0 30px 0;
 
   @media screen and (min-width: $bp-desktop) {
+    background-position: center top;
     padding: 272px 0;
   }
 

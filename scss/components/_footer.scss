@@ -27,9 +27,9 @@ footer::before {
   width: 92px;
   height: 196px;
   left: 0;
-   top: 50px;
+  top: 50px;
 
-   @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-tablet) {
     background-image: url(../images/decor-bread-small.png);
     width: 180px;
     height: 120px;
